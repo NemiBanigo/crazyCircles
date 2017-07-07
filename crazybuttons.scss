@@ -1,0 +1,30 @@
+body{
+ margin: 0;	
+ padding: 30px; 
+ transition: 0.5s ease all;
+    .one-circle{
+        border-radius: 50%;
+        background-color: #c00c00;
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        left: 40%;
+        transition: 0.5s ease all;      
+
+    }
+    // .two-circle{
+    //     border-radius: 50%;
+    //     background-color: #f52;
+    //     height: 50px;
+    //     width: 50px;
+    //     display: inline-block;
+    //     position: absolute;
+    //     top: 30px;
+    //     left: 40%;
+    //     transition: 0.5s ease all;
+        
+
+    // }
+}

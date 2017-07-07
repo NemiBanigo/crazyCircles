@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Getting Started Javascript </title>
+	<link rel="stylesheet" type="text/css" href="crazybuttons.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div class="circle">
+	 <span class="one-circle"></span> 
+      <span class="one-circle"></span> 
+       <span class="one-circle"></span> 
+       <span class="one-circle"></span> 
+      <span class="one-circle"></span> 
+       <span class="one-circle"></span>
+        <span class="one-circle"></span> 
+      <span class="one-circle"></span> 
+       <span class="one-circle"></span> 
+       <span class="one-circle"></span> 
+      <span class="one-circle"></span> 
+       <span class="one-circle"></span>
+	</div>
+
+    <!--<button class="button"> Button </button>-->
+
+	
+
+
+	
+ 	<!-- 🔥🔥🔥🔥js starts here bitches --> 
+ 	
+
+ 	<script type="text/javascript">
+     const crazyCircles = document.querySelectorAll('.one-circle');
+     const background = document.querySelector('body');
+    //  const buttons = document.querySelector('.button');
+
+     function moveButton () {
+       const offsetLeft = Math.random() * (window.innerWidth - this.clientWidth);
+       const offsetTop = Math.random() * (window.innerHeight - this.clientHeight);
+
+       console.log(offsetLeft,offsetTop);
+
+       this.style.top =  offsetTop +'px';
+       this.style.left = offsetLeft + 'px';
+       
+       changeBackground ()
+       
+     }
+     
+     function changeBackground () {
+         const r = Math.floor(Math.random() * 256);
+         const g = Math.floor(Math.random() * 256);
+         const b = Math.floor(Math.random() * 256);
+         background.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+
+         console.log(r,g,b);
+     }
+
+
+     crazyCircles.forEach(span => span.addEventListener('mouseenter', moveButton));
+    
+      	 
+   </script>
+</body>
+</html>
